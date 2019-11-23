@@ -11,12 +11,12 @@ var router = express.Router();
 var userController = require('../controllers/UserController');
 
 /* GET users listing. */
-router.get('/:username', userController.getOne);
+router.get('/:cellphone', userController.getOne);
 router.get('/', userController.getAll);
 
 router.post('/',userController.register);
-router.put('/:username', userController.update);
-router.delete('/:username',userController.delete);
+router.put('/:cellphone', userController.update);
+router.delete('/:cellphone',userController.delete);
 
 module.exports = router;
 module.exports = router;

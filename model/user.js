@@ -2,18 +2,17 @@ const mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var UserSchema = Schema({
-    username: {
+    cellphone: {
         type: String,
         required: true,
         unique: true
     },
-    first_name: String,
-    last_name: String,
-    email: {
-        type: String,
-        required: true
-    },
-    password: {
+    Modelo: String,
+    MemroiaInterna: String,
+    RAM: String,
+    Bateria: String,
+    SistemaOperativo: String,
+    Marca: {
         type: String,
         required: true
     },

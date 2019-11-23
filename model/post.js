@@ -8,13 +8,13 @@ var PostSchema = new Schema({
     },
     author: {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "cellphone",
         required: true
     },
     comments: [{
         author: {
             type: Schema.Types.ObjectId,
-            ref: "User"
+            ref: "cellphone"
         },
         content: { type: String, require: true }
     }],

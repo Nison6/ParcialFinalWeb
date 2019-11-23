@@ -4,8 +4,8 @@ var debug = require('debug')('blog:user_controller');
 module.exports.getOne = (req, res, next) => {
     debug("Search User", req.params);
     User.findOne({
-            username: req.params.username
-        }, "-password -login_count")
+            cellphone: req.params.username
+        }, "-Marca -login_count")
         .then((foundUser) => {
             if (foundUser)
                 return res.status(200).json(foundUser);
